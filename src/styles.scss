@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.list {
+  &-button-wrapper {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    button {
+      margin-left: 0.5rem;
+      &:nth-of-type(1) {
+        margin-left: 0;
+      }
+    }
+  }
+  &-title {
+    margin: 0 auto 0 0 !important;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-form-field + .mat-form-field {
+  margin-bottom: 0.5rem;
+}
+.mat-form-field {
+  width: 100%;
+}
+
+.action {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  align-self: end;
+}
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

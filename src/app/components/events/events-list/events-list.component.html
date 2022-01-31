@@ -1,0 +1,8 @@
+<div class="list-button-wrapper">
+	<h1 class="list-title">Events</h1>
+	<button class="list-button" mat-raised-button color="primary" (click)="openDialogModal()">Create event</button>
+	</div>
+<div *ngIf="loading" class="spinner-wrapper" style="margin-top: 12rem;"><mat-spinner *ngIf="loading"></mat-spinner></div>
+<div *ngIf="!loading" class="grid">
+	<app-events-card *ngFor="let event of events" [event]="event"></app-events-card>
+</div>
